@@ -1,106 +1,105 @@
 #header {
-  background: rgba(19, 61, 124, 0.61);
-  // background: rgba(0, 34, 84, 0.61);
+	background: rgba(19, 61, 124, 0.61);
+	// background: rgba(0, 34, 84, 0.61);
 
-  backdrop-filter: blur(5px);
-  position: fixed;
-  width: 100%;
-  padding: 10px 0;
-  z-index: 999;
-  .header__section {
-    display: flex;  
-    justify-content: space-between;
-    align-items: center;
-    &--items{
-      &__a , Link {
-        color: #FFFFFF;
-        padding: 5px 16px;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 18px;
-        text-decoration: none;  
-        transition: 0.1s;
-        margin: 0 20px;
-      }
-    }
-  }
+	backdrop-filter: blur(5px);
+	position: fixed;
+	width: 100%;
+	padding: 10px 0;
+	z-index: 999;
+	.header__section {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&--items {
+			&__a,
+			Link {
+				color: #ffffff;
+				padding: 5px 0px;
+
+				font-family: "Montserrat", sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 18px;
+				text-decoration: none;
+				transition: 0.1s;
+				margin: 0 10px;
+			}
+		}
+	}
 }
 
-
 .dropbtn {
-  background: none;
-  color: white;
-  padding: 6px;
-  font-size: 16px;
-  border: none;
+	background: none;
+	color: white;
+	padding: 6px;
+	font-size: 16px;
+	border: none;
 }
 
 /* Контейнер <div> - необходим для размещения выпадающего содержимого */
 .dropdown {
-  position: relative;
-  display: inline-block;
-  margin: 0 20px;
-  transition: 0.5s;
-
-
+	position: relative;
+	display: inline-block;
+	margin: 0 20px;
+	transition: 0.5s;
 }
 
 /* Выпадающее содержимое (скрыто по умолчанию) */
 .dropdown-content {
-  display: none;
-  margin-left: -16px;
-  position: absolute;
-  background-color: #ffffff;
-  padding: 10px 10px;
-  border-radius: 5px;
-  min-width: 160px;
-  z-index: 1;
+	display: none;
+	margin-left: -16px;
+	position: absolute;
+	background-color: #ffffff;
+	padding: 10px 10px;
+	border-radius: 5px;
+	min-width: 160px;
+	z-index: 1;
 }
 
 /* Ссылки внутри выпадающего списка */
 .dropdown-content {
-  a , Link {
-    color: black;
-    padding: 5px 16px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-    text-decoration: none;
-    transition: 0.1s;
-    margin: 5px 0;
-    display: block;
-  }
-
+	a,
+	Link {
+		color: black;
+		padding: 5px 16px;
+		font-family: "Montserrat", sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 18px;
+		text-decoration: none;
+		transition: 0.1s;
+		margin: 5px 0;
+		display: block;
+	}
 }
 
 /* Изменение цвета выпадающих ссылок при наведении курсора */
 .dropdown-content a:hover {
-  background-color: #00656B
-;
-  border-radius: 10px;
-  color: #FFFFFF;
+	background-color: #00656b;
+	border-radius: 10px;
+	color: #ffffff;
 }
 
 /* Показать выпадающее меню при наведении курсора */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
 
 /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
 //.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-
 @media (max-width: 768px) {
-  .header__section--items__nav {
-    display: none;
-  }
+	.header__section--items__nav {
+		display: none;
+	}
 }
 @media (max-width: 768px) {
-  .header__section--items__2 {
-    display: flex;
-    flex-direction: column;
-    
-  }
+	.header__section--items__2 {
+		display: flex;
+		flex-direction: column;
+	}
 }
