@@ -51,7 +51,7 @@ const Teachers = () => {
 													cursor: "pointer",
 												}}
 												onClick={() => handleFileClick(el.file)}>
-												PDF file
+												Резюме 
 											</button>
 										</div>
 									</div>
