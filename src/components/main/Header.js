@@ -28,7 +28,7 @@ const Header = () => {
 						<span className="header__section--items__nav">
 							<div className="dropdown">
 								<button className="dropbtn">
-									Факультет туралуу маалымат{" "}
+									Факультет тууралуу маалымат{" "}
 									<i className="fa-solid fa-angle-down" />
 								</button>
 								<div className="dropdown-content">
