@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  # Create React App treats lint warnings as errors when CI=true
+  CI = "false"
+  NODE_VERSION = "20"
+
+# Single-page app: serve index.html for client-side routes like /teachers
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
